@@ -1,1 +1,81 @@
-<h1>Contact placeholder</h1>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kapcsolat | GTAK Consulting</title>
+<link rel="stylesheet" href="css/main.css">
+
+<style>
+.contact-wrap{
+    width:92%;max-width:1100px;margin:70px auto;
+    display:grid;gap:50px;
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+}
+.contact-box{
+    background:#fff;padding:32px;border-radius:18px;
+    box-shadow:0 14px 34px rgba(0,0,0,0.08);
+}
+.contact-box h2{
+    margin-bottom:20px;font-size:28px;color:#102A45;
+}
+form input,form textarea{
+    width:100%;margin:10px 0;padding:14px;border-radius:8px;
+    border:1px solid #D0D9E6;font-size:15px;
+}
+form button{
+    margin-top:10px;width:100%;padding:14px;font-size:17px;
+}
+.gdpr{display:flex;align-items:center;margin-top:10px;font-size:14px;color:#647180;}
+.map iframe{width:100%;height:340px;border:0;border-radius:18px;}
+</style>
+</head>
+
+<body>
+<header class="header">
+    <div class="nav-container">
+        <div class="logo">GTAK Consulting</div>
+        <nav>
+            <a href="index.html">Főoldal</a>
+            <a href="services.html">Szolgáltatások</a>
+            <a href="projects.html">Referenciák</a>
+            <a href="about.html">Rólunk</a>
+            <a href="contact.html" class="active">Kapcsolat</a>
+        </nav>
+    </div>
+</header>
+
+<section style="padding:120px 6%;text-align:center;background:#F6FAFF;">
+    <h1>Kapcsolatfelvétel</h1>
+    <p style="color:#587085;margin-top:10px;font-size:17px;">
+        Írj nekünk pár sort, és 24 órán belül válaszolunk.
+    </p>
+</section>
+
+<section class="contact-wrap">
+
+<div class="contact-box">
+  <h2>Lépj kapcsolatba velünk</h2>
+  <form>
+    <input type="text" placeholder="Név">
+    <input type="email" placeholder="E-mail cím">
+    <input type="text" placeholder="Tárgy">
+    <textarea rows="5" placeholder="Üzenet"></textarea>
+
+    <div class="gdpr">
+      <input type="checkbox" style="width:auto;margin-right:8px;">
+      Elfogadom az adatkezelési feltételeket (GDPR)
+    </div>
+
+    <button class="btn btn-primary">Üzenet küldése →</button>
+  </form>
+</div>
+
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12..." loading="lazy"></iframe>
+</div>
+
+</section>
+
+</body>
+</html>
