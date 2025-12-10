@@ -1,1 +1,151 @@
-<h1>About placeholder</h1>
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rólunk | GTAK Consulting</title>
+<link rel="stylesheet" href="css/main.css">
+
+<style>
+    .about-hero{
+        padding:120px 6%;text-align:center;
+        background:linear-gradient(135deg,#EAF1FF,#FFFFFF);
+    }
+    .about-hero h1{font-size:52px;color:#12263A;}
+    .about-hero p{max-width:780px;margin:18px auto;font-size:18px;color:#5D6C7A;}
+
+    .team{
+        width:92%;max-width:1200px;margin:60px auto 90px;
+        display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    }
+    .member{
+        background:#fff;padding:28px;border-radius:16px;
+        box-shadow:0 10px 26px rgba(0,0,0,0.07);text-align:center;
+        transition:.25s;
+    }
+    .member:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,0.12);}
+    .member img{
+        width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:14px;
+    }
+    .member h3{font-size:22px;color:#132C45;margin-bottom:4px;}
+    .member span.role{color:#FF7B00;font-weight:600;font-size:15px;}
+    .member p.bio{font-size:15px;line-height:1.55;margin-top:10px;color:#577082;}
+
+    .linkedin-btn{
+        margin-top:14px;display:inline-block;padding:8px 14px;font-size:14px;
+        background:#0077B5;color:#fff;border-radius:6px;text-decoration:none;
+        transition:.2s;
+    }
+    .linkedin-btn:hover{opacity:.85;transform:translateY(-2px);}
+</style>
+</head>
+
+<body>
+<header class="header">
+    <div class="nav-container">
+        <div class="logo">GTAK Consulting</div>
+        <nav>
+            <a href="index.html">Főoldal</a>
+            <a href="services.html">Szolgáltatások</a>
+            <a href="projects.html">Referenciák</a>
+            <a href="about.html" class="active">Rólunk</a>
+            <a href="contact.html">Kapcsolat</a>
+        </nav>
+    </div>
+</header>
+
+<section class="about-hero">
+    <h1>6 szakértő — egy minőségvezérelt irány</h1>
+    <p>
+        A GTAK Consulting Kft. alapítói 10+ év tapasztalatot hoznak tesztelési folyamatokból,
+        test data managementből és release governance-ből.  
+        Eredményfókusz, technológiai gondolkodás és fegyelmezett kivitelezés — ez a DNS-ünk.
+    </p>
+</section>
+
+<section>
+    <div class="team">
+
+        <!-- 1 -->
+        <div class="member">
+            <img src="https://i.pravatar.cc/300?img=12">
+            <h3>Alapító #1</h3>
+            <span class="role">QA Architect</span>
+            <p class="bio">
+                Minőségbiztosítási vezető 12+ év nagyvállalati tapasztalattal.  
+                Tesztautomatizáció, szabványosítás és governance fókusz.  
+                CI/CD pipeline integráció elsődleges erősség.
+            </p>
+            <a href="#" class="linkedin-btn">LinkedIn</a>
+        </div>
+
+        <!-- 2 -->
+        <div class="member">
+            <img src="https://i.pravatar.cc/300?img=47">
+            <h3>Alapító #2</h3>
+            <span class="role">Test Data Management Lead</span>
+            <p class="bio">
+                Adatmaszkolás és szintetikus tesztadat előállítás szakértő.  
+                Fókusz: provisioning, compliance, high-volume TDM automation.  
+                GDPR-tudatos adatok → gyorsabb release-ek.
+            </p>
+            <a href="#" class="linkedin-btn">LinkedIn</a>
+        </div>
+
+        <!-- 3 -->
+        <div class="member">
+            <img src="https://i.pravatar.cc/300?img=33">
+            <h3>Alapító #3</h3>
+            <span class="role">Release Manager</span>
+            <p class="bio">
+                Teljes SDLC átfogás — go/no-go gate kialakítással.  
+                Risk management + operatív deploy koordináció.  
+                “Stable launch first” szemlélet.
+            </p>
+            <a href="#" class="linkedin-btn">LinkedIn</a>
+        </div>
+
+        <!-- 4 -->
+        <div class="member">
+            <img src="https://i.pravatar.cc/300?img=21">
+            <h3>Alapító #4</h3>
+            <span class="role">Automation Engineer</span>
+            <p class="bio">
+                Python, Java, Playwright, Selenium tapasztalat.  
+                E2E automatizáció → regressziók lefutási ideje -60%.  
+                Tech-driven gondolkodás, DevOps affinitással.
+            </p>
+            <a href="#" class="linkedin-btn">LinkedIn</a>
+        </div>
+
+        <!-- 5 -->
+        <div class="member">
+            <img src="https://i.pravatar.cc/300?img=6">
+            <h3>Alapító #5</h3>
+            <span class="role">Performance Analyst</span>
+            <p class="bio">
+                Load/stress megoldások JMeter/Gatling környezetben.  
+                Bottleneck detektálás + scaling-ajánlások.  
+                KPI + dashboard szemlélet.
+            </p>
+            <a href="#" class="linkedin-btn">LinkedIn</a>
+        </div>
+
+        <!-- 6 -->
+        <div class="member">
+            <img src="https://i.pravatar.cc/300?img=59">
+            <h3>Alapító #6</h3>
+            <span class="role">SQA Strategist</span>
+            <p class="bio">
+                QA governance, mérőszámok, audit-ready folyamatok.  
+                Enterprise szintű minőségkultúra építése.  
+                Release biztonság + átlátható működés.
+            </p>
+            <a href="#" class="linkedin-btn">LinkedIn</a>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
