@@ -1,65 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rólunk – GTAK Consulting</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rólunk — GTAK Consulting</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-<!-- NAV -->
-<header class="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="logo">GTAK Consulting</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Főoldal</a></li>
-                <li><a href="about.html" class="active">Rólunk</a></li>
-                <li><a href="services.html">Szolgáltatások</a></li>
-                <li><a href="contact.html">Kapcsolat</a></li>
-            </ul>
-        </nav>
+  <!-- NAV (same) -->
+  <header class="navbar">
+    <div class="nav-inner container">
+      <a href="index.html" class="logo">GTAK Consulting</a>
+      <nav class="nav-links">
+        <a href="index.html">Főoldal</a>
+        <a href="about.html">Rólunk</a>
+        <a href="services.html">Szolgáltatások</a>
+        <a href="projects.html">Projektek</a>
+        <a href="contact.html">Kapcsolat</a>
+      </nav>
+      <div id="mobileToggle" class="mobile-toggle">☰</div>
     </div>
-</header>
+  </header>
+  <div id="mobileMenu" class="mobile-menu" style="display:none"></div>
 
-<!-- HEADER -->
-<section class="page-header">
-    <h1>Rólunk</h1>
-    <p>Tapasztalat, precizitás és modern technológiai szemlélet.</p>
-</section>
-
-<!-- CONTENT -->
-<div class="section-wrapper">
-    <h2>Kik vagyunk?</h2>
-    <p>
-        A GTAK Consulting egy modern, technológia-orientált vállalati tanácsadó cég,
-        amely hat tulajdonos szakmai tapasztalatára épül. Csapatunk a vállalati IT,
-        minőségbiztosítás, projektmenedzsment és digitális transzformáció területein
-        támogatja ügyfeleit.
-    </p>
-
-    <h2>Értékeink</h2>
-
-    <div class="feature-grid">
-        <div class="feature-card">
-            <h3>Innováció</h3>
-            <p>Mindig a legfrissebb IT trendeket és technológiákat alkalmazzuk.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Megbízhatóság</h3>
-            <p>Precíz, transzparens és határidőre teljesített munka.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Ügyfélközpontúság</h3>
-            <p>Rugalmas megoldások, valódi együttműködés.</p>
-        </div>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Rólunk</h1>
+      <p>Hat tulajdonos, enterprise-grade know-how — minőség és mérhető eredmények.</p>
     </div>
-</div>
+  </section>
 
-<footer>
-    © 2025 GTAK Consulting
-</footer>
+  <section class="section">
+    <div class="container">
+      <h2>Kik vagyunk</h2>
+      <p>Rövid, szerkeszthető bemutatkozó szöveg. Itt lehet a hosszabb cégismertető.</p>
 
+      <div class="grid team-grid" style="margin-top:20px">
+        <div class="card member">
+          <img src="assets/img/team1.jpg" alt="Owner 1">
+          <h3>Owner 1</h3>
+          <div style="color:var(--accent);font-weight:700">QA Architect</div>
+          <p style="color:var(--muted)">Rövid bio – könnyen cserélhető.</p>
+        </div>
+        <div class="card member">
+          <img src="assets/img/team2.jpg" alt="Owner 2">
+          <h3>Owner 2</h3>
+          <div style="color:var(--accent);font-weight:700">TDM Lead</div>
+          <p style="color:var(--muted)">Rövid bio – könnyen cserélhető.</p>
+        </div>
+        <div class="card member">
+          <img src="assets/img/team3.jpg" alt="Owner 3">
+          <h3>Owner 3</h3>
+          <div style="color:var(--accent);font-weight:700">Release Manager</div>
+          <p style="color:var(--muted)">Rövid bio – könnyen cserélhető.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© 2025 GTAK Consulting</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
