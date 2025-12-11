@@ -5,17 +5,34 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-  <div class="header-inner container">
-    <div class="logo">GTAK Consulting</div>
-    <nav class="nav">
-      <a href="about.html">Rólunk</a>
-      <a href="services.html">Megoldások</a>
-      <a href="projects.html">Referenciák</a>
-      <a href="contact.html" class="cta-ghost">Kapcsolat</a>
-    </nav>
-  </div>
+<header class="nav">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="index.html">GTAK Consulting</a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+
+        <nav class="nav-links">
+            <a href="index.html" data-page="index">Főoldal</a>
+            <a href="services.html" data-page="services">Szolgáltatások</a>
+            <a href="projects.html" data-page="projects">Projektek</a>
+            <a href="about.html" data-page="about">Rólunk</a>
+            <a href="contact.html" data-page="contact">Kapcsolat</a>
+        </nav>
+    </div>
 </header>
+
+<script>
+    // --- Active menu handler ---
+    const page = location.pathname.split("/").pop().replace(".html", "") || "index";
+    document.querySelectorAll('.nav-links a').forEach(a => {
+        if (a.dataset.page === page) {
+            a.classList.add('active');
+        }
+    });
+</script>
 
 <section class="hero container">
   <div>
