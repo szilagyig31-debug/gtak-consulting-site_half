@@ -7,23 +7,38 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  
+<!-- NAVBAR -->
+<header class="navbar glass-nav">
+  <div class="nav-container">
 
-  <!-- NAV -->
-  <header class="navbar">
-    <div class="nav-inner container">
-      <a href="index.html" class="logo">GTAK Consulting</a>
+    <!-- LOGO -->
+    <a href="index.html" class="nav-logo">
+      <span>GTAK</span> Consulting
+    </a>
 
-      <nav class="nav-links" aria-label="Fő navigáció">
-        <a href="index.html">Főoldal</a>
-        <a href="about.html">Rólunk</a>
-        <a href="services.html">Szolgáltatások</a>
-        <a href="projects.html">Projektek</a>
-        <a href="contact.html">Kapcsolat</a>
-      </nav>
+    <!-- DESKTOP NAV -->
+    <nav class="nav-links">
+      <a href="index.html">Főoldal</a>
+      <a href="about.html">Rólunk</a>
+      <a href="services.html">Szolgáltatások</a>
+      <a href="projects.html">Projektek</a>
+      <a href="contact.html">Kapcsolat</a>
+    </nav>
 
-      <button id="mobileToggle" class="mobile-toggle" aria-expanded="false" aria-controls="mobileMenu">☰</button>
-    </div>
-  </header>
+    <!-- HAMBURGER -->
+    <button class="nav-toggle" id="navToggle" aria-expanded="false">☰</button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Főoldal</a>
+      <a href="about.html">Rólunk</a>
+      <a href="services.html">Szolgáltatások</a>
+      <a href="projects.html">Projektek</a>
+      <a href="contact.html">Kapcsolat</a>
+  </div>
+</header>
 
   <!-- MOBILE MENU -->
   <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
