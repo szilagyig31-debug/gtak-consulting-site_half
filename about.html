@@ -4,82 +4,72 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Rólunk — GTAK Consulting</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+<div class="header-wrap"></div>
 
- <!-- NAVBAR -->
-<header class="navbar glass-nav">
-  <div class="nav-container">
-
-    <!-- LOGO -->
-    <a href="index.html" class="nav-logo">
-      <span>GTAK</span> Consulting
-    </a>
-
-    <!-- DESKTOP NAV -->
+<header class="navbar">
+  <div class="nav-inner container">
+    <div class="logo"><a href="index.html">GTAK <small>Consulting</small></a></div>
     <nav class="nav-links">
       <a href="index.html">Főoldal</a>
       <a href="about.html">Rólunk</a>
       <a href="services.html">Szolgáltatások</a>
       <a href="projects.html">Projektek</a>
       <a href="contact.html">Kapcsolat</a>
+      <a href="contact.html" class="cta">Ajánlatkérés</a>
     </nav>
-
-    <!-- HAMBURGER -->
-    <button class="nav-toggle" id="navToggle" aria-expanded="false">☰</button>
+    <button class="hamburger" aria-label="Menü" type="button">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
   </div>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html">Főoldal</a>
-      <a href="about.html">Rólunk</a>
-      <a href="services.html">Szolgáltatások</a>
-      <a href="projects.html">Projektek</a>
-      <a href="contact.html">Kapcsolat</a>
+  <div class="mobile-panel">
+    <a href="index.html">Főoldal</a>
+    <a href="about.html">Rólunk</a>
+    <a href="services.html">Szolgáltatások</a>
+    <a href="projects.html">Projektek</a>
+    <a href="contact.html">Kapcsolat</a>
+    <a href="contact.html" class="cta">Ajánlatkérés</a>
   </div>
 </header>
-  <div id="mobileMenu" class="mobile-menu" style="display:none"></div>
 
-  <section class="page-hero">
-    <div class="container">
-      <h1>Rólunk</h1>
-      <p>Hat tulajdonos, enterprise-grade know-how — minőség és mérhető eredmények.</p>
-    </div>
-  </section>
+<section class="page-hero">
+  <div class="container">
+    <h1>Rólunk</h1>
+    <p class="muted">Hat tulajdonos szakértelme — tesztelés, TDM, release és QA governance területeken.</p>
+  </div>
+</section>
 
-  <section class="section">
-    <div class="container">
-      <h2>Kik vagyunk</h2>
-      <p>Rövid, szerkeszthető bemutatkozó szöveg. Itt lehet a hosszabb cégismertető.</p>
+<section class="section">
+  <div class="container">
+    <h2>Kik vagyunk</h2>
+    <p>Rövid cégbemutató — itt részletesen kitölthető.</p>
 
-      <div class="grid team-grid" style="margin-top:20px">
-        <div class="card member">
-          <img src="assets/img/team1.jpg" alt="Owner 1">
-          <h3>Owner 1</h3>
-          <div style="color:var(--accent);font-weight:700">QA Architect</div>
-          <p style="color:var(--muted)">Rövid bio – könnyen cserélhető.</p>
-        </div>
-        <div class="card member">
-          <img src="assets/img/team2.jpg" alt="Owner 2">
-          <h3>Owner 2</h3>
-          <div style="color:var(--accent);font-weight:700">TDM Lead</div>
-          <p style="color:var(--muted)">Rövid bio – könnyen cserélhető.</p>
-        </div>
-        <div class="card member">
-          <img src="assets/img/team3.jpg" alt="Owner 3">
-          <h3>Owner 3</h3>
-          <div style="color:var(--accent);font-weight:700">Release Manager</div>
-          <p style="color:var(--muted)">Rövid bio – könnyen cserélhető.</p>
-        </div>
+    <div class="grid team-grid" style="margin-top:18px">
+      <div class="card member">
+        <img src="https://i.pravatar.cc/150?img=12" alt="Owner 1">
+        <h3>Owner 1</h3>
+        <div style="color:var(--accent);font-weight:700">QA Architect</div>
+        <p class="muted">12 év tapasztalat, CI/CD integrációk.</p>
+      </div>
+      <div class="card member">
+        <img src="https://i.pravatar.cc/150?img=47" alt="Owner 2">
+        <h3>Owner 2</h3>
+        <div style="color:var(--accent);font-weight:700">TDM Lead</div>
+        <p class="muted">Adatmaszkolás és provisioning szakértő.</p>
+      </div>
+      <div class="card member">
+        <img src="https://i.pravatar.cc/150?img=33" alt="Owner 3">
+        <h3>Owner 3</h3>
+        <div style="color:var(--accent);font-weight:700">Release Manager</div>
+        <p class="muted">Launch readiness és risk gating.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="footer">
-    <div class="container">© 2025 GTAK Consulting</div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
+<footer class="footer"><div class="container">© 2025 GTAK Consulting</div></footer>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
