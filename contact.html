@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="hu">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kapcsolat | GTAK Consulting</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="header-inner container">
+    <div class="logo">GTAK Consulting</div>
+    <nav class="nav">
+      <a href="about.html">Rólunk</a>
+      <a href="services.html">Megoldások</a>
+      <a href="projects.html">Referenciák</a>
+      <a href="contact.html" class="cta-ghost">Kapcsolat</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section container">
+  <h2>Kapcsolat</h2>
+  <p class="lead">Írj nekünk pár sorban a projektedről, vagy kérj helyszíni felmérést — 24 órán belül válaszolunk.</p>
+
+  <div class="contact-wrap">
+    <div class="contact-card">
+      <h3>Írj nekünk</h3>
+      <form onsubmit="event.preventDefault(); alert('Köszönjük, üzenetedet megkaptuk.');">
+        <input type="text" placeholder="Név" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="text" placeholder="Weboldal / Cég neve (opcionális)">
+        <textarea placeholder="Rövid projekt leírás" required></textarea>
+
+        <div class="checkbox-row"><input type="checkbox" id="gdpr" required><label for="gdpr"> Elfogadom az adatkezelési feltételeket (GDPR)</label></div>
+
+        <button class="btn-primary" type="submit">Küldés</button>
+      </form>
+    </div>
+
+    <div class="contact-card">
+      <h3>Elérhetőségek</h3>
+      <p style="color:var(--muted)">Email: <strong>info@gtakconsulting.com</strong></p>
+      <p style="color:var(--muted)">Telefon: <strong>+36 30 000 0000</strong></p>
+      <h3 style="margin-top:20px">Irodánk</h3>
+      <p style="color:var(--muted)">Budapest, Hungary</p>
+      <div style="margin-top:18px">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.123..." width="100%" height="250" style="border:0;border-radius:8px" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© 2025 GTAK Consulting</div>
+</footer>
+</body>
+</html>
