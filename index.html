@@ -1,57 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTAK Consulting – Főoldal</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GTAK Consulting — Főoldal</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-<!-- NAV -->
-<header class="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="logo">GTAK Consulting</a>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Főoldal</a></li>
-                <li><a href="about.html">Rólunk</a></li>
-                <li><a href="services.html">Szolgáltatások</a></li>
-                <li><a href="contact.html">Kapcsolat</a></li>
-            </ul>
-        </nav>
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="nav-inner container">
+      <a href="index.html" class="logo">GTAK Consulting</a>
+      <nav class="nav-links">
+        <a href="index.html">Főoldal</a>
+        <a href="about.html">Rólunk</a>
+        <a href="services.html">Szolgáltatások</a>
+        <a href="projects.html">Projektek</a>
+        <a href="contact.html">Kapcsolat</a>
+      </nav>
+      <div id="mobileToggle" class="mobile-toggle">☰</div>
     </div>
-</header>
+  </header>
+  <div id="mobileMenu" class="mobile-menu" style="display:none"></div>
 
-<!-- HERO -->
-<section class="hero">
-    <h1>Digitális megoldások & vállalati innováció</h1>
-    <p>Modern IT és üzleti tanácsadás átlátható, ügyfélközpontú megközelítéssel.</p>
-    <a class="btn-primary" href="contact.html">Kapcsolat</a>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner container">
+      <div>
+        <h1>Quality Focus. Measurable Delivery.</h1>
+        <p>Tesztelés · Tesztadat · Release Management · QA — modern technológiákkal, mérhető eredményekkel.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="contact.html">Ajánlatkérés</a>
+          <a class="btn btn-ghost" href="services.html">Szolgáltatásaink</a>
+        </div>
+      </div>
 
-<!-- FEATURES -->
-<div class="section-wrapper">
-    <h2>Mit csinálunk?</h2>
-
-    <div class="feature-grid">
-        <div class="feature-card">
-            <h3>IT Tanácsadás</h3>
-            <p>Vállalati IT stratégia, folyamatfejlesztés, architektúra.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Digitalizáció</h3>
-            <p>Folyamatok modernizálása, automatizáció, transzformáció.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Projektmenedzsment</h3>
-            <p>Vezetett, átlátható és határidőre szállított projektek.</p>
-        </div>
+      <div class="hero-card">
+        <!-- optional illustration -->
+        <img src="assets/img/hero-illus.png" alt="Illustration (replace with your image)" />
+      </div>
     </div>
-</div>
+  </section>
 
-<footer>
-    © 2025 GTAK Consulting
-</footer>
+  <!-- SERVICES PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <h2>Fő szolgáltatások</h2>
+      <div class="grid services-grid">
+        <div class="card">
+          <h3>Tesztelés & QA</h3>
+          <p>Automata és manuális tesztek, E2E, performance és regression stratégia.</p>
+        </div>
+        <div class="card">
+          <h3>Tesztadat Management</h3>
+          <p>Szintetikus és maszkolt adatok, provisioning pipeline-ok és compliance.</p>
+        </div>
+        <div class="card">
+          <h3>Release Management</h3>
+          <p>CI/CD, release gating, canary és rollback playbook-ok.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <h2>Referenciák</h2>
+      <div class="grid projects-grid">
+        <div class="card project-card">
+          <h3>Banki QA automatizáció</h3>
+          <p>Regression coverage + pipeline integráció.</p>
+          <div class="project-tags"><span class="tag">Finance</span><span class="tag">Automation</span></div>
+        </div>
+        <div class="card project-card">
+          <h3>TelCo TDM bevezetés</h3>
+          <p>Data masking és provisioning modul nagy rendszerekhez.</p>
+          <div class="project-tags"><span class="tag">Telecom</span><span class="tag">TDM</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">© 2025 GTAK Consulting — Minden jog fenntartva.</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
