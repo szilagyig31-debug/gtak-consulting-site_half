@@ -1,49 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapcsolat – GTAK Consulting</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kapcsolat — GTAK Consulting</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-<!-- NAV -->
-<header class="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="logo">GTAK Consulting</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Főoldal</a></li>
-                <li><a href="about.html">Rólunk</a></li>
-                <li><a href="services.html">Szolgáltatások</a></li>
-                <li><a href="contact.html" class="active">Kapcsolat</a></li>
-            </ul>
-        </nav>
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="nav-inner container">
+      <a href="index.html" class="logo">GTAK Consulting</a>
+      <nav class="nav-links">
+        <a href="index.html">Főoldal</a>
+        <a href="about.html">Rólunk</a>
+        <a href="services.html">Szolgáltatások</a>
+        <a href="projects.html">Projektek</a>
+        <a href="contact.html">Kapcsolat</a>
+      </nav>
+      <div id="mobileToggle" class="mobile-toggle">☰</div>
     </div>
-</header>
+  </header>
+  <div id="mobileMenu" class="mobile-menu" style="display:none"></div>
 
-<!-- HEADER -->
-<section class="page-header">
-    <h1>Kapcsolat</h1>
-    <p>Írj nekünk bizalommal!</p>
-</section>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Kapcsolat</h1>
+      <p>Írj nekünk, és 24 órán belül válaszolunk.</p>
+    </div>
+  </section>
 
-<!-- CONTENT -->
-<div class="section-wrapper">
-    <h2>Üzenetküldés</h2>
+  <section class="section">
+    <div class="container contact-wrap">
+      <div class="contact-card">
+        <h3>Elérhetőségek</h3>
+        <p>Email: <strong>info@gtakconsulting.com</strong></p>
+        <p>Tel: <strong>+36 30 000 0000</strong></p>
+      </div>
 
-    <form class="contact-form">
-        <input type="text" placeholder="Név">
-        <input type="email" placeholder="Email cím">
-        <textarea rows="5" placeholder="Üzenet"></textarea>
-        <button type="submit">Küldés</button>
-    </form>
-</div>
+      <div class="contact-card">
+        <h3>Üzenet küldése</h3>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Köszönjük!');">
+          <input type="text" placeholder="Név" required />
+          <input type="email" placeholder="E-mail" required />
+          <textarea placeholder="Üzenet" rows="6" required></textarea>
+          <button class="btn btn-primary" type="submit">Küldés</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-<footer>
-    © 2025 GTAK Consulting
-</footer>
+  <footer class="footer">
+    <div class="container">© 2025 GTAK Consulting</div>
+  </footer>
 
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
