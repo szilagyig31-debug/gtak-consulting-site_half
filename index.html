@@ -4,168 +4,104 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>GTAK Consulting — Innováció, Tesztelés, Release</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  
-<!-- NAVBAR -->
-<header class="navbar glass-nav">
-  <div class="nav-container">
 
-    <!-- LOGO -->
-    <a href="index.html" class="nav-logo">
-      <span>GTAK</span> Consulting
-    </a>
+<!-- header placeholder to reserve space for fixed nav -->
+<div class="header-wrap"></div>
 
-    <!-- DESKTOP NAV -->
+<!-- NAV -->
+<header class="navbar">
+  <div class="nav-inner container">
+    <div class="logo"><a href="index.html">GTAK <small>Consulting</small></a></div>
+
     <nav class="nav-links">
       <a href="index.html">Főoldal</a>
       <a href="about.html">Rólunk</a>
       <a href="services.html">Szolgáltatások</a>
       <a href="projects.html">Projektek</a>
       <a href="contact.html">Kapcsolat</a>
+      <a href="contact.html" class="cta">Ajánlatkérés</a>
     </nav>
 
-    <!-- HAMBURGER -->
-    <button class="nav-toggle" id="navToggle" aria-expanded="false">☰</button>
+    <button class="hamburger" aria-label="Menü" type="button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
   </div>
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html">Főoldal</a>
-      <a href="about.html">Rólunk</a>
-      <a href="services.html">Szolgáltatások</a>
-      <a href="projects.html">Projektek</a>
-      <a href="contact.html">Kapcsolat</a>
-  </div>
-</header>
-
-  <!-- MOBILE MENU -->
-  <div id="mobileMenu" class="mobile-menu" aria-hidden="true">
+  <!-- mobile panel -->
+  <div class="mobile-panel">
     <a href="index.html">Főoldal</a>
     <a href="about.html">Rólunk</a>
     <a href="services.html">Szolgáltatások</a>
     <a href="projects.html">Projektek</a>
     <a href="contact.html">Kapcsolat</a>
+    <a href="contact.html" class="cta">Ajánlatkérés</a>
   </div>
+</header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-inner container">
-      <div class="hero-copy">
-        <small class="eyebrow">SCIENCE UNSCRIPTED → alkalmazva a tech & QA világában</small>
-        <h1>Innovatív tesztelés és megbízható release-menedzsment</h1>
-        <p class="lead">Adatvezérelt QA, tesztadat-management és CI/CD best practice megoldások — vállalati skálára tervezve.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="contact.html">Kérj ajánlatot</a>
-          <a class="btn btn-ghost" href="services.html">Szolgáltatásaink</a>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <img src="assets/img/hero-illus.png" alt="Illustration" />
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner container">
+    <div>
+      <span class="eyebrow">SCIENCE UNSCRIPTED — applied to QA & Release</span>
+      <h1>Innovatív tesztelés és megbízható release-menedzsment</h1>
+      <p class="lead">Adatvezérelt QA, tesztadat-management és CI/CD best practice megoldások — vállalati skálára tervezve.</p>
+      <div class="hero-ctas">
+        <a class="btn cta btn-primary" href="contact.html">Kérj ajánlatot</a>
+        <a class="btn" href="services.html">Szolgáltatásaink</a>
       </div>
     </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section class="section about">
-    <div class="container">
-      <h2>Rólunk</h2>
-      <p class="muted">Szakértelmünk — tesztelés, TDM, release és QA governance területeken. Gyorsan tervezünk, stabilan szállítunk.</p>
+    <div class="hero-card">
+      <img src="assets/img/hero-illus.png" alt="Illustration (replace)" />
+    </div>
+  </div>
+</section>
 
-      <div class="grid team-grid" style="margin-top:22px">
-        <!-- placeholderek; cseréld a nevekre és LinkedIn linkekre -->
-        <div class="card member">
-          <img src="https://i.pravatar.cc/150?img=12" alt="Owner 1">
-          <h3>Owner 1</h3>
-          <p class="muted">QA Architect — tesztautomatizálás, CI/CD</p>
-        </div>
-        <div class="card member">
-          <img src="https://i.pravatar.cc/150?img=47" alt="Owner 2">
-          <h3>Owner 2</h3>
-          <p class="muted">TDM Lead — adatmaszkolás, provisioning</p>
-        </div>
-        <div class="card member">
-          <img src="https://i.pravatar.cc/150?img=33" alt="Owner 3">
-          <h3>Owner 3</h3>
-          <p class="muted">Release Manager — launch readiness, risk gates</p>
-        </div>
+<!-- SERVICES PREVIEW -->
+<section class="section">
+  <div class="container">
+    <h2>Fő szolgáltatások</h2>
+    <p class="muted">Tesztelés, Tesztadat, Release management és QA — vállalati fókusz.</p>
+
+    <div class="grid services-grid" style="margin-top:18px">
+      <div class="card"><h3>Tesztelés & QA</h3><p>Automatizálás, E2E és performance.</p></div>
+      <div class="card"><h3>Tesztadat Management</h3><p>Maszkolás, synthetic data, provisioning.</p></div>
+      <div class="card"><h3>Release Management</h3><p>CI/CD, release gating, rollback playbook.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS PREVIEW -->
+<section class="section">
+  <div class="container">
+    <h2>Referenciák</h2>
+    <p class="muted">Kiemelt projekteink — rövid eredményekkel.</p>
+
+    <div class="grid projects-grid" style="margin-top:18px">
+      <div class="card project-card">
+        <h3>Banki QA automatizáció</h3>
+        <p>Regression coverage + pipeline integráció — 40% időcsökkenés.</p>
+        <div style="margin-top:12px"><span class="tag">Finance</span><span class="tag">Automation</span></div>
+      </div>
+
+      <div class="card project-card">
+        <h3>TelCo TDM bevezetés</h3>
+        <p>Adatmaszkolás és provisioning nagy rendszereknél.</p>
+        <div style="margin-top:12px"><span class="tag">Telco</span><span class="tag">TDM</span></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SERVICES -->
-  <section class="section">
-    <div class="container">
-      <h2>Szolgáltatások</h2>
-      <p class="muted">Mit kínálunk ügyfeleinknek — rövid áttekintés.</p>
+<footer class="footer">
+  <div class="container">© 2025 GTAK Consulting — Minden jog fenntartva.</div>
+</footer>
 
-      <div class="grid services-grid" style="margin-top:18px">
-        <div class="card">
-          <h3>Tesztelés & QA</h3>
-          <p>Manuális és automata tesztelés, E2E, performance.</p>
-        </div>
-        <div class="card">
-          <h3>Tesztadat Management</h3>
-          <p>Maszkolás, synthetic data, provisioning pipeline</p>
-        </div>
-        <div class="card">
-          <h3>Release Management</h3>
-          <p>CI/CD, release gating, rollback playbook</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS (Bioforge-szerű flow) -->
-  <section class="section process">
-    <div class="container">
-      <h2>A folyamatunk</h2>
-
-      <div class="grid process-grid" style="margin-top:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
-        <div class="card">
-          <h4>1. Kapcsolat</h4>
-          <p>Lépj kapcsolatba – átbeszéljük a célokat és igényeket.</p>
-        </div>
-        <div class="card">
-          <h4>2. Ajánlat & terv</h4>
-          <p>Áttekinthető javaslat költség- és időbecsléssel.</p>
-        </div>
-        <div class="card">
-          <h4>3. Fejlesztés & prototípus</h4>
-          <p>Proof-of-concept, tesztelés és finomhangolás.</p>
-        </div>
-        <div class="card">
-          <h4>4. Szállítás & támogatás</h4>
-          <p>Bevezetés, monitoring, további optimalizáció.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT PREVIEW -->
-  <section class="section">
-    <div class="container">
-      <h2>Kapcsolat</h2>
-      <p class="muted">Email: <strong>info@gtakconsulting.com</strong> — Telefon: <strong>+36 30 000 0000</strong></p>
-      <a href="contact.html" class="btn btn-primary" style="margin-top:12px;display:inline-block">Írj nekünk</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
-        <div>© 2025 GTAK Consulting</div>
-        <div style="display:flex;gap:8px">
-          <a href="#" aria-label="Facebook">FB</a>
-          <a href="#" aria-label="Instagram">IG</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
