@@ -1,75 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szolgáltatások – GTAK Consulting</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Szolgáltatások — GTAK Consulting</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-<!-- NAV -->
-<header class="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="logo">GTAK Consulting</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Főoldal</a></li>
-                <li><a href="about.html">Rólunk</a></li>
-                <li><a href="services.html" class="active">Szolgáltatások</a></li>
-                <li><a href="contact.html">Kapcsolat</a></li>
-            </ul>
-        </nav>
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="nav-inner container">
+      <a href="index.html" class="logo">GTAK Consulting</a>
+      <nav class="nav-links">
+        <a href="index.html">Főoldal</a>
+        <a href="about.html">Rólunk</a>
+        <a href="services.html">Szolgáltatások</a>
+        <a href="projects.html">Projektek</a>
+        <a href="contact.html">Kapcsolat</a>
+      </nav>
+      <div id="mobileToggle" class="mobile-toggle">☰</div>
     </div>
-</header>
+  </header>
+  <div id="mobileMenu" class="mobile-menu" style="display:none"></div>
 
-<!-- HEADER -->
-<section class="page-header">
-    <h1>Szolgáltatások</h1>
-    <p>Specializált megoldások vállalatok számára.</p>
-</section>
-
-<!-- CONTENT -->
-<div class="section-wrapper">
-    <h2>Fő területeink</h2>
-
-    <div class="feature-grid">
-
-        <div class="feature-card">
-            <h3>Tesztelés</h3>
-            <p>
-                Manuális és automatizált tesztelés, minőségbiztosítási folyamatok fejlesztése,
-                test coverage elemzés.
-            </p>
-        </div>
-
-        <div class="feature-card">
-            <h3>Tesztadat Management</h3>
-            <p>
-                Tesztadat generálás, adatminőség, maszkolás, tesztadat pipeline-ok kiépítése.
-            </p>
-        </div>
-
-        <div class="feature-card">
-            <h3>Release Management</h3>
-            <p>
-                CI/CD folyamatok kialakítása, verziózás, release governance és koordináció.
-            </p>
-        </div>
-
-        <div class="feature-card">
-            <h3>QA és Minőségbiztosítás</h3>
-            <p>
-                QA folyamatok standardizálása, auditok, teljes körű vállalati QA stratégia.
-            </p>
-        </div>
-
+  <section class="page-hero">
+    <div class="container">
+      <h1>Szolgáltatások</h1>
+      <p>Részletes szolgáltatási portfólió — tesztelés, TDM, release management és QA.</p>
     </div>
-</div>
+  </section>
 
-<footer>
-    © 2025 GTAK Consulting
-</footer>
+  <section class="section">
+    <div class="container">
+      <div class="grid services-grid">
+        <div class="card">
+          <h3>Tesztelés & QA</h3>
+          <p>Automatizálás, E2E, performance és manual QA.</p>
+        </div>
+        <div class="card">
+          <h3>Tesztadat Management</h3>
+          <p>Maszkolás, szintetikus adatgenerálás, provisioning pipeline.</p>
+        </div>
+        <div class="card">
+          <h3>Release Management</h3>
+          <p>CI/CD integráció, release gating, rollback playbook.</p>
+        </div>
+        <div class="card">
+          <h3>QA Advisory</h3>
+          <p>KPI design, maturity assessment, audit readiness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <footer class="footer">
+    <div class="container">© 2025 GTAK Consulting</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
