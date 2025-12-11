@@ -4,73 +4,61 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kapcsolat — GTAK Consulting</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-<!-- NAVBAR -->
-<header class="navbar glass-nav">
-  <div class="nav-container">
+<div class="header-wrap"></div>
 
-    <!-- LOGO -->
-    <a href="index.html" class="nav-logo">
-      <span>GTAK</span> Consulting
-    </a>
-
-    <!-- DESKTOP NAV -->
+<header class="navbar">
+  <div class="nav-inner container">
+    <div class="logo"><a href="index.html">GTAK <small>Consulting</small></a></div>
     <nav class="nav-links">
       <a href="index.html">Főoldal</a>
       <a href="about.html">Rólunk</a>
       <a href="services.html">Szolgáltatások</a>
       <a href="projects.html">Projektek</a>
       <a href="contact.html">Kapcsolat</a>
+      <a href="contact.html" class="cta">Ajánlatkérés</a>
     </nav>
-
-    <!-- HAMBURGER -->
-    <button class="nav-toggle" id="navToggle" aria-expanded="false">☰</button>
+    <button class="hamburger" aria-label="Menü" type="button">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
   </div>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html">Főoldal</a>
-      <a href="about.html">Rólunk</a>
-      <a href="services.html">Szolgáltatások</a>
-      <a href="projects.html">Projektek</a>
-      <a href="contact.html">Kapcsolat</a>
+  <div class="mobile-panel">
+    <a href="index.html">Főoldal</a><a href="about.html">Rólunk</a><a href="services.html">Szolgáltatások</a><a href="projects.html">Projektek</a><a href="contact.html">Kapcsolat</a><a href="contact.html" class="cta">Ajánlatkérés</a>
   </div>
 </header>
-  <div id="mobileMenu" class="mobile-menu" style="display:none"></div>
 
-  <section class="page-hero">
-    <div class="container">
-      <h1>Kapcsolat</h1>
-      <p>Írj nekünk, és 24 órán belül válaszolunk.</p>
-    </div>
-  </section>
+<section class="page-hero">
+  <div class="container">
+    <h1>Kapcsolat</h1>
+    <p class="muted">Írj nekünk — 24 órán belül válaszolunk.</p>
+  </div>
+</section>
 
-  <section class="section">
-    <div class="container contact-wrap">
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
       <div class="contact-card">
         <h3>Elérhetőségek</h3>
         <p>Email: <strong>info@gtakconsulting.com</strong></p>
-        <p>Tel: <strong>+36 30 000 0000</strong></p>
+        <p>Telefon: <strong>+36 30 000 0000</strong></p>
       </div>
 
       <div class="contact-card">
         <h3>Üzenet küldése</h3>
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('Köszönjük!');">
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Köszönjük, megkaptuk az üzenetet.');">
           <input type="text" placeholder="Név" required />
           <input type="email" placeholder="E-mail" required />
-          <textarea placeholder="Üzenet" rows="6" required></textarea>
-          <button class="btn btn-primary" type="submit">Küldés</button>
+          <textarea rows="6" placeholder="Üzenet" required></textarea>
+          <button class="cta" type="submit">Küldés</button>
         </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="footer">
-    <div class="container">© 2025 GTAK Consulting</div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
+<footer class="footer"><div class="container">© 2025 GTAK Consulting</div></footer>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
