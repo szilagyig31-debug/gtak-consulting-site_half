@@ -1,34 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hu">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Referenciák | GTAK Consulting</title>
-<link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTaK Consulting – Projektek</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-<header>
-  <div class="header-inner container">
-    <div class="logo">GTAK Consulting</div>
-    <nav class="nav">
-      <a href="about.html">Rólunk</a>
-      <a href="services.html">Megoldások</a>
-      <a href="projects.html" class="active">Referenciák</a>
-      <a href="contact.html" class="cta-ghost">Kapcsolat</a>
-    </nav>
-  </div>
+
+<!-- NAVBAR – egységes -->
+<header class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">GTaK<span>Consulting</span></a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="services.html">Szolgáltatások</a></li>
+                <li><a href="projects.html" class="active">Projektek</a></li>
+                <li><a href="contact.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-mobile-toggle" id="mobileToggle">☰</div>
+    </div>
 </header>
 
-<section class="section container">
-  <h2>Referenciák & Esettanulmányok</h2>
-  <p class="lead">Kiemelt projektek és rövid eredmények — minden case könnyen bővíthető részletes beszámolóval.</p>
-  <div class="projects-grid">
-    <div class="project"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200"><div class="meta"><h3>Release governance rendszer</h3><p>Launch readiness + risk gating bevezetése.</p></div></div>
-    <div class="project"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200"><div class="meta"><h3>Operational workflow</h3><p>Automation és cost reduction program.</p></div></div>
-    <div class="project"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200"><div class="meta"><h3>Data governance</h3><p>SSOT and KPI dashboard rollout.</p></div></div>
-  </div>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Főoldal</a>
+    <a href="about.html">Rólunk</a>
+    <a href="services.html">Szolgáltatások</a>
+    <a href="projects.html" class="active">Projektek</a>
+    <a href="contact.html">Kapcsolat</a>
+</div>
+
+<!-- HERO -->
+<section class="subpage-hero">
+    <div class="hero-content">
+        <h1>Projektjeink</h1>
+        <p>Valós üzleti eredmények, modern technológiákkal.</p>
+    </div>
 </section>
 
-<footer>
-  <div class="container">© 2025 GTAK Consulting</div>
-</footer>
+<!-- PROJECTS GRID -->
+<section class="projects-section">
+    <div class="container">
+
+        <!-- PROJECT CARD -->
+        <div class="project-card">
+            <h2>Vállalati Data Governance bevezetés</h2>
+            <p>
+                Egy 9000+ milliárdos bevételű nagyvállalatnál bevezettük
+                az adatminőség, adat-hozzáférés és adatfolyamatok teljes
+                governance keretrendszerét.
+            </p>
+            <div class="tags">
+                <span>Data Governance</span>
+                <span>Enterprise</span>
+                <span>Modern Data Stack</span>
+            </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card">
+            <h2>Teljes infrastruktúra modernizáció</h2>
+            <p>
+                Felhőre migráció, konténerizáció, CI/CD bevezetés és
+                zero-downtime deployment folyamatok kiépítése.
+            </p>
+            <div class="tags">
+                <span>DevOps</span>
+                <span>Cloud</span>
+                <span>Automation</span>
+            </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card">
+            <h2>API Integrációs Platform</h2>
+            <p>
+                Mikroszolgáltatás-alapú integrációs platform fejlesztése
+                gyors, megbízható adatkapcsolatokhoz több vállalati rendszer között.
+            </p>
+            <div class="tags">
+                <span>System Integration</span>
+                <span>API</span>
+                <span>Microservices</span>
+            </div>
+        </div>
+
+        <!-- PROJECT CARD -->
+        <div class="project-card">
+            <h2>Kiberbiztonsági audit & hardening</h2>
+            <p>
+                Többszintű sérülékenységvizsgálat, folyamatfejlesztés,
+                zero-trust irányelvek és hozzáférésbiztonság kialakítása.
+            </p>
+            <div class="tags">
+                <span>Security</span>
+                <span>Audit</span>
+                <span>Zero Trust</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
