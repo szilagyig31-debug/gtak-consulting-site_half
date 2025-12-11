@@ -51,15 +51,44 @@ body{
 .logo a small{color:var(--muted);font-weight:600;margin-left:6px;font-size:.85rem}
 
 /* nav links - desktop */
-.nav-links{display:flex;gap:18px;align-items:center}
+.nav-links {
+  display:flex;
+  gap:18px;
+  align-items:center
+}
+
 .nav-links a{
-  text-decoration:none;color:var(--text);font-weight:600;padding:8px 10px;border-radius:8px;position:relative;transition:all .18s;
+  text-decoration:none;
+  color:var(--text);
+  font-weight:600;
+  padding:8px 10px;
+  border-radius:8px;
+  position:relative;
+  transition:all .18s;
+  box-sizing:border-box;
+
+  border:1px solid rgba(0,0,0,0.15); /* új keret */
 }
-.nav-links a:hover{color:var(--accent)}
+
+.nav-links a:hover{
+  color:var(--accent);
+  border-color:var(--accent);        /* hover kiemelés */
+}
+
 .nav-links a::after{
-  content:"";position:absolute;left:12px;bottom:4px;height:2px;width:0;background:var(--accent);transition:width .22s;
+  content:"";
+  position:absolute;
+  left:12px;
+  bottom:4px;
+  height:2px;
+  width:0;
+  background:var(--accent);
+  transition:width .22s;
 }
-.nav-links a:hover::after{width:calc(100% - 24px)}
+
+.nav-links a:hover::after{
+  width:calc(100% - 24px);
+}
 
 /* CTA */
 .cta{
