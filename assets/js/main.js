@@ -1,19 +1,25 @@
-// Mobile menu toggle
 document.addEventListener('DOMContentLoaded', function () {
   const toggle = document.getElementById('mobileToggle');
   const mobileMenu = document.getElementById('mobileMenu');
+
   if (toggle && mobileMenu) {
-    toggle.addEventListener('click', () => mobileMenu.classList.toggle('open'));
-    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+    toggle.addEventListener('click', function () {
+      const opened = mobileMenu.classList.toggle('open');
+      mobileMenu.style.display = opened ? 'block' : 'none';
+      toggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
+    });
+
+    // close when clicking a link
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      mobileMenu.style.display = 'none';
+      toggle.setAttribute('aria-expanded','false');
+    }));
   }
 
-  // mark active link by filename
-  const path = location.pathname.split('/').pop() || 'index.html';
-  const links = document.querySelectorAll('.nav-links a, .mobile-menu a');
-  links.forEach(a => {
-    const href = a.getAttribute('href').split('/').pop();
-    if (href === path) {
-      a.classList.add('active');
-    }
+  // mark active menu item
+  const current = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(a => {
+    if ((a.getAttribute('href') || '') === current) a.classList.add('active');
   });
 });
