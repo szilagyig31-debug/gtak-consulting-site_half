@@ -77,10 +77,13 @@ section {
   color: var(--text-main);
   font-weight: 600;
   padding: 8px 14px;
-  border-radius: 10px;
-  transition: var(--transition);
-}
+  border-radius: 12px;
 
+  border: 1px solid #dbe3f0;
+  background: rgba(255,255,255,0.6);
+
+  transition: all 0.18s ease;
+}
 .nav-links a:hover {
   background: var(--bg-accent);
   color: var(--primary);
