@@ -85,13 +85,19 @@ section {
   transition: all 0.18s ease;
 }
 .nav-links a:hover {
-  background: var(--bg-accent);
+  background: #e6edff;
+  border-color: var(--primary);
   color: var(--primary);
 }
 
 .nav-cta {
   background: linear-gradient(135deg, var(--primary), var(--primary-soft));
+  border: none !important;
   color: white !important;
+}
+
+.nav-cta:hover {
+  box-shadow: 0 8px 22px rgba(47,109,246,.35);
 }
 
 /* =========================
