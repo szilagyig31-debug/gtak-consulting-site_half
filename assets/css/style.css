@@ -89,7 +89,11 @@ section {
   border-color: var(--primary);
   color: var(--primary);
 }
-
+.nav-links a.active {
+  background: linear-gradient(135deg, #e6edff, #f2f6ff);
+  border-color: var(--primary);
+  color: var(--primary);
+}
 .nav-cta {
   background: linear-gradient(135deg, var(--primary), var(--primary-soft));
   border: none !important;
