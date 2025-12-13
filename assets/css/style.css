@@ -1,8 +1,14 @@
 :root{
-  --bg: #f6f9fc;
-  --bg-main: #f7f9fc;
+  --bg-main: #f2f6ff;          /* világos kékes alap */
   --bg-section: #ffffff;
+  --bg-accent: #e6edff;
+  --bg: #f6f9fc;
   --bg-soft: #eef2f7;
+  --primary: #2f6df6;         /* erőteljes tech blue */
+  --primary-soft: #5a8cff;
+  --accent: #00c2a8;          /* friss, modern mint */
+  --text-main: #0f172a;
+  --text-muted: #475569;
   --card: #ffffff;
   --text: #0f1724;
   --muted: #64748b;
@@ -35,10 +41,10 @@ body{
   position:fixed;left:0;right:0;top:0;height:var(--nav-h);z-index:1200;
   display:flex;align-items:center;backdrop-filter: blur(10px) saturate(140%);
   transition: all .28s ease;
-  background: rgba(255,255,255,0.0); /* transparent by default on top */
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e2e8f0;
   box-shadow: none;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-}
 .navbar.scrolled{
   background: rgba(255,255,255,var(--glass-alpha));
   box-shadow: 0 8px 30px rgba(2,6,23,0.06);
@@ -74,8 +80,8 @@ body{
 }
 
 .nav-links a:hover{
-  color:var(--accent);
-  border-color:var(--accent);        /* hover kiemelés */
+  color: var(--primary);
+  background: #e6edff;       /* hover kiemelés */
 }
 
 .nav-links a::after{
@@ -118,7 +124,10 @@ body{
 /* ---------- HERO ---------- */
 .hero{
   padding:120px 0 40px; /* space for fixed nav */
-  background: linear-gradient(135deg,#f7f9fc 0%,#eef2f7 60%,#e9eef5 100%);
+ background:
+    radial-gradient(circle at 15% 30%, #5a8cff55 0%, transparent 40%),
+    radial-gradient(circle at 85% 70%, #00c2a855 0%, transparent 45%),
+    linear-gradient(135deg, #f2f6ff 0%, #e6edff 100%);
 }
 .hero .hero-inner{display:grid;grid-template-columns:1fr 460px;gap:36px;align-items:center;max-width:var(--maxw);margin:0 auto;padding:0 20px}
 .eyebrow{font-weight:700;color:var(--accent);font-size:.85rem;margin-bottom:8px}
