@@ -1,5 +1,8 @@
 :root{
   --bg: #f6f9fc;
+  --bg-main: #f7f9fc;
+  --bg-section: #ffffff;
+  --bg-soft: #eef2f7;
   --card: #ffffff;
   --text: #0f1724;
   --muted: #64748b;
@@ -16,7 +19,7 @@
 html,body{height:100%}
 body{
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-  background:var(--bg);
+  background:var(--bg-main);
   color:var(--text);
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
@@ -115,7 +118,7 @@ body{
 /* ---------- HERO ---------- */
 .hero{
   padding:120px 0 40px; /* space for fixed nav */
-  background: linear-gradient(180deg, rgba(238,246,255,1), rgba(255,255,255,1));
+  background: linear-gradient(135deg,#f7f9fc 0%,#eef2f7 60%,#e9eef5 100%);
 }
 .hero .hero-inner{display:grid;grid-template-columns:1fr 460px;gap:36px;align-items:center;max-width:var(--maxw);margin:0 auto;padding:0 20px}
 .eyebrow{font-weight:700;color:var(--accent);font-size:.85rem;margin-bottom:8px}
@@ -131,6 +134,8 @@ body{
 .section{padding:56px 0}
 .section .container{padding:0}
 .section h2{font-size:1.6rem;margin-bottom:8px}
+.section {background: var(--bg-section);}
+.section.alt {background: var(--bg-soft);}
 .muted{color:var(--muted)}
 
 /* grids */
