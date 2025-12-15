@@ -11,6 +11,7 @@
   --bg-main: #f2f6ff;
   --bg-section: #ffffff;
   --bg-accent: #e6edff;
+  --gtak-green: #2FAF8E; /* PDF-alapú brand zöld */
 
   --primary: #2f6df6;
   --primary-soft: #5a8cff;
@@ -60,6 +61,23 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+
+}
+
+.logo--brand{
+  background: var(--gtak-green);
+  padding: 10px 14px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo svg{
+  height: 36px;
+  width: auto;
+  display: block;
 }
 
 .logo img {
@@ -261,6 +279,10 @@ footer {
   .btn {
     width: 100%;
   }
+
+  .logo--brand{ padding:8px 12px; }
+  .logo svg{ height:32px; }
+}
 
   .nav-links {
     gap: 10px;
