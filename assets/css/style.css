@@ -11,7 +11,7 @@
   --bg-main: #f2f6ff;
   --bg-section: #ffffff;
   --bg-accent: #e6edff;
-  --gtak-green: #2FAF8E; /* PDF-alapú brand zöld */
+  --gtak-green:#259E82;
 
   --primary: #2f6df6;
   --primary-soft: #5a8cff;
@@ -66,28 +66,25 @@ section {
 
 }
 
-.logo--brand{
-   background: var(--gtak-green);
-  padding: 10px 14px;
-  border-radius: 12px;
-
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-
-  display: inline-flex;
-  align-items: center;
+.logo--nav{
+  display:flex;
+  align-items:baseline;
+  gap:6px;
+  text-decoration:none;
 }
 
-.logo svg{
-  height: 36px;
-  width: auto;
-  display: block;
+.logo--nav .logo-main{
+  font-size:22px;
+  font-weight:800;
+  color:#0f172a; /* sötét tech-es */
+  letter-spacing:0.02em;
 }
 
-.logo img {
-  height: 44px;
-}
-
+.logo--nav .logo-sub{
+  font-size:13px;
+  font-weight:500;
+  color:#64748b; /* neutrális */
+  letter-spacing:0.04em;
 .nav-links {
   display: flex;
   gap: 18px;
@@ -159,7 +156,22 @@ section {
   gap: 14px;
   margin-top: 26px;
 }
+.hero-logo{
+  margin-bottom:24px;
+   }
 
+.logo--brand{
+  background:var(--gtak-green);
+  padding:14px 18px;
+  border-radius:14px;
+
+  display:inline-flex;
+  align-items:center;
+
+  box-shadow:
+    0 10px 30px rgba(37,158,130,0.35),
+    0 2px 8px rgba(0,0,0,0.08);
+}
 /* =========================
    BUTTONS
 ========================= */
