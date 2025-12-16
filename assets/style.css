@@ -1,0 +1,101 @@
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter, system-ui, sans-serif;
+  color:#0f172a;
+  background:#f8fafc;
+}
+
+:root{
+  --brand:#259E82;
+}
+
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 24px;
+}
+
+/* LOGO */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+}
+.logo-mark{
+  width:10px;
+  height:32px;
+  background:var(--brand);
+  border-radius:4px;
+}
+.logo-main{
+  font-size:22px;
+  font-weight:800;
+  color:#0f172a;
+}
+.logo-sub{
+  font-size:13px;
+  font-weight:500;
+  color:#64748b;
+}
+
+/* NAVBAR */
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(248,250,252,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid #e2e8f0;
+}
+.nav-inner{
+  height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.nav-links{
+  display:flex;
+  gap:16px;
+}
+.nav-links a{
+  text-decoration:none;
+  font-weight:600;
+  padding:8px 12px;
+  border-radius:8px;
+  color:#0f172a;
+}
+.nav-links a:hover{
+  background:#e2e8f0;
+}
+.nav-cta{
+  background:var(--brand);
+  color:#fff !important;
+}
+.nav-cta:hover{
+  background:#1f8f76;
+}
+
+/* HERO */
+.page-hero{
+  padding:80px 0 60px;
+  background:linear-gradient(180deg,#f8fafc,#eef2f7);
+}
+.page-hero h1{
+  font-size:42px;
+  margin-bottom:12px;
+}
+
+/* FOOTER */
+footer{
+  padding:40px 0;
+  border-top:1px solid #e2e8f0;
+  color:#64748b;
+}
+
+@media(max-width:768px){
+  .nav-links{display:none}
+  .page-hero h1{font-size:32px}
+}
