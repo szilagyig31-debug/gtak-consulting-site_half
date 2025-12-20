@@ -1,0 +1,69 @@
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui,sans-serif;
+  color:#0f172a;
+  background:#f8fafc;
+  line-height:1.6;
+}
+:root{
+  --brand:#259E82;
+  --brand-dark:#1f8f76;
+  --muted:#64748b;
+}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+
+/* LOGO */
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-mark{width:10px;height:32px;background:var(--brand);border-radius:4px}
+.logo-main{font-size:22px;font-weight:800}
+.logo-sub{font-size:13px;color:var(--muted)}
+
+/* NAV */
+.navbar{position:sticky;top:0;z-index:100;background:rgba(248,250,252,.96);backdrop-filter:blur(8px);border-bottom:1px solid #e2e8f0}
+.nav-inner{height:68px;display:flex;justify-content:space-between;align-items:center}
+.nav-links{display:flex;gap:14px}
+.nav-links a{padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600;color:#0f172a}
+.nav-links a:hover{background:#e2e8f0}
+.nav-cta{background:var(--brand);color:#fff!important}
+.hamburger{display:none;font-size:26px;cursor:pointer}
+
+/* MOBILE MENU */
+.mobile-nav{display:none;flex-direction:column;background:#fff;border-top:1px solid #e2e8f0}
+.mobile-nav.open{display:flex}
+.mobile-nav a{padding:16px;text-decoration:none;color:#0f172a;border-bottom:1px solid #f1f5f9}
+
+/* HERO */
+.hero{padding:96px 0 80px;background:linear-gradient(180deg,#f0fdf9,#ecfeff)}
+.hero h1{font-size:44px;margin-bottom:16px}
+.hero p{max-width:720px;color:var(--muted);margin-bottom:24px}
+.hero .cta{display:inline-block;background:var(--brand);color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600}
+
+/* SECTIONS */
+section{padding:72px 0}
+.section-title{font-size:30px;margin-bottom:32px}
+
+/* CARDS */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:24px;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.08)}
+
+/* TEAM */
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
+.avatar{width:96px;height:96px;border-radius:50%;background:#e2e8f0;margin:0 auto 12px}
+
+/* FOOTER */
+footer{padding:40px 0;border-top:1px solid #e2e8f0;color:var(--muted)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .grid,.team{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .nav-links{display:none}
+  .hamburger{display:block}
+  .hero h1{font-size:32px}
+  .grid,.team{grid-template-columns:1fr}
+  section{padding:56px 0}
+}
