@@ -8,17 +8,34 @@ body{
   line-height:1.6;
 }
 :root{
-  --brand:#259E82;
-  --brand-dark:#1f8f76;
-  --muted:#64748b;
+  --brand:#22c55e;
+  --accent:#38bdf8;     /* világoskék */
+  --accent-2:#a78bfa;   /* lila */
+  --dark:#0f172a;
 }
 .container{max-width:1200px;margin:0 auto;padding:0 20px}
 
 /* LOGO */
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo-mark{width:10px;height:32px;background:var(--brand);border-radius:4px}
-.logo-main{font-size:22px;font-weight:800}
-.logo-sub{font-size:13px;color:var(--muted)}
+.logo-main {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.logo-sub {
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.logo-mark {
+  width: 14px;
+  height: 40px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #22c55e, #16a34a);
+}
+
 
 /* NAV */
 .navbar{position:sticky;top:0;z-index:100;background:rgba(248,250,252,.96);backdrop-filter:blur(8px);border-bottom:1px solid #e2e8f0}
@@ -65,19 +82,34 @@ body{
 
 /* HERO */
 .hero{padding:96px 0 80px;background:linear-gradient(180deg,#f0fdf9,#ecfeff)}
-.hero h1{font-size:44px;margin-bottom:16px}
+.hero {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(56,189,248,.15), transparent 40%),
+    radial-gradient(circle at 90% 30%, rgba(167,139,250,.18), transparent 45%),
+    linear-gradient(180deg, #f0fdf9, #ecfeff);
+}
+.hero h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
 .hero p{max-width:720px;color:var(--muted);margin-bottom:24px}
 .hero .cta{display:inline-block;background:var(--brand);color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600}
 .hero + section{border-top:1px solid #e2e8f0;}
 /* SECTIONS */
 section{padding:72px 0}
 .section-title{font-size:30px;margin-bottom:32px}
-.section-box{
-  background:#ffffff;
-  border:1px solid #e2e8f0;
-  border-radius:24px;
-  padding:48px;
+.section-box {
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
+  border: 1px solid #e5e7eb;
+  border-radius: 28px;
+  padding: 56px;
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.06),
+    inset 0 1px 0 rgba(255,255,255,.6);
 }
+
 
 /* CARDS */
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
@@ -137,4 +169,14 @@ footer{padding:40px 0;border-top:1px solid #e2e8f0;color:var(--muted)}
     display: flex;
     flex-direction: column;
   }
+}
+/* === NAV TYPO – UPGRADE === */
+
+.nav-links a,
+.mobile-nav a {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
