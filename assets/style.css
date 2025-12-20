@@ -41,6 +41,19 @@ body{
 }
 .hamburger{display:none;font-size:26px;cursor:pointer}
 
+/* =========================
+   NAV TYPOGRAPHY
+   ========================= */
+
+.nav-links a,
+.mobile-nav a {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #0f172a;
+}
+
 /* MOBILE MENU */
 .mobile-nav{
   border-top:1px solid #e2e8f0;
@@ -95,5 +108,33 @@ footer{padding:40px 0;border-top:1px solid #e2e8f0;color:var(--muted)}
   .section-box{
     padding:28px;
     border-radius:18px;
+  }
+}
+/* =========================
+   NAV DUPLIKÁCIÓ FIX
+   ========================= */
+
+/* Alapértelmezés: mobil nav rejtve */
+.mobile-nav {
+  display: none;
+}
+
+/* Desktop nav csak nagy képernyőn */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+  }
+}
+
+/* Mobil nézet */
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
   }
 }
