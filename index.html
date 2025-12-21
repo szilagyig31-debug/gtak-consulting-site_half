@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GTAK Consulting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="logo"><span>G</span>TAK</a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="lang">
+      <span onclick="setLang('hu')">HU</span> |
+      <span onclick="setLang('en')">EN</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section>
+  <div class="container section-box">
+    <h1 data-i18n="heroTitle"></h1>
+    <p data-i18n="heroText"></p>
+  </div>
+</section>
+
+<!-- ================= SERVICES PREVIEW ================= -->
+<section>
+  <div class="container section-box">
+    <h2>Our services</h2>
+    <div class="grid">
+      <div class="card"><div class="img"></div><h3>Software Testing</h3><p>End-to-end enterprise testing services.</p></div>
+      <div class="card"><div class="img"></div><h3>Test Data Management</h3><p>Secure and compliant test data handling.</p></div>
+      <div class="card"><div class="img"></div><h3>Release Management</h3><p>Predictable and controlled releases.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REFERENCES ================= -->
+<section>
+  <div class="container section-box">
+    <h2>References</h2>
+    <div class="refs">
+      <img src="images/ref-kh.png" height="40">
+      <img src="images/ref-one.png" height="40">
+      <img src="images/ref-yettel.png" height="40">
+      <img src="images/ref-nordix.png" height="40">
+      <img src="images/ref-alpsoft.png" height="40">
+      <img src="images/ref-hexaware.png" height="40">
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section>
+  <div class="container section-box" style="text-align:center">
+    <h2>Let’s build quality into your IT systems</h2>
+    <p>Talk to our experts and see how GTAK can support your delivery.</p>
+    <a href="contact.html" class="cta-btn">Contact us</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">© 2025 GTAK Consulting Kft.</div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/lang.js"></script>
+</body>
+</html>
