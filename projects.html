@@ -1,63 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Projects – GTAK Consulting</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<section class="container section-box">
+  <h1 data-i18n="projectsTitle"></h1>
+  <p data-i18n="projectsIntro"></p>
 
-<header>
-  <div class="container navbar">
-   <a href="index.html" class="logo">
-  <span class="logo-brand">G-TAK</span>
-  <span class="logo-consulting">Consulting</span>
-</a>
+  <div class="grid">
+    <div class="card">
+      <div class="img"></div>
+      <h3>Banki core rendszer</h3>
+      <p>Több millió tranzakciót kezelő rendszer QA támogatása.</p>
+    </div>
 
-    <nav class="nav-links">
-      <a href="index.html" data-i18n="navHome"></a>
-  <a href="services.html" data-i18n="navServices"></a>
-  <a href="projects.html" data-i18n="navProjects"></a>
-  <a href="about.html" data-i18n="navAbout"></a>
-  <a href="contact.html" data-i18n="navContact"></a>
-    </nav>
-    <div class="lang">
-      <span onclick="setLang('hu')">HU</span> |
-      <span onclick="setLang('en')">EN</span>
+    <div class="card">
+      <div class="img"></div>
+      <h3>Telekommunikációs platform</h3>
+      <p>Digitális ügyfélcsatornák end-to-end tesztelése.</p>
     </div>
   </div>
-</header>
 
-<main>
-
-<section>
-  <div class="container section-box">
-    <h1>Project references</h1>
-    <p>
-      We have supported large-scale IT programs across finance, telecom and
-      digital services.
-    </p>
-
-    <div class="grid">
-      <div class="card"><div class="img"></div><h3>KH Bank</h3><p>Core banking QA transformation.</p></div>
-      <div class="card"><div class="img"></div><h3>ONE</h3><p>Telecom platform testing and releases.</p></div>
-      <div class="card"><div class="img"></div><h3>Yettel</h3><p>Digital channel quality assurance.</p></div>
-      <div class="card"><div class="img"></div><h3>Nordix</h3><p>European fintech testing support.</p></div>
-      <div class="card"><div class="img"></div><h3>Alpsoft</h3><p>ERP and integration testing.</p></div>
-      <div class="card"><div class="img"></div><h3>Hexaware</h3><p>International QA delivery projects.</p></div>
-    </div>
+  <div class="refs">
+    <img src="images/kh.png">
+    <img src="images/yettel.png">
+    <img src="images/one.png">
+    <img src="images/finovia.png">
+    <img src="images/nexicom.png">
   </div>
 </section>
-
-</main>
-
-<footer>
-  <div class="container">© 2025 GTAK Consulting Kft.</div>
-</footer>
-
-<script src="js/main.js"></script>
-<script src="js/lang.js"></script>
-</body>
-</html>
