@@ -1,92 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
-<meta charset="UTF-8">
-<title>GTAK Consulting</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>G-TAK Consulting – IT Quality & QA</title>
+  <meta name="description" content="Vállalati szintű tesztelés, QA és release management tanácsadás.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-
-<!-- ================= NAVBAR ================= -->
+<!-- ===== NAVBAR ===== -->
 <header>
-  <div class="container navbar">
-    <a href="index.html" class="logo">
-  <span class="logo-brand">G-TAK</span>
-  <span class="logo-consulting">Consulting</span>
-</a>
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-main">G-TAK</span>
+      <span class="logo-sub">Consulting</span>
+    </div>
 
-
-    <nav class="nav-links">
-      <a href="index.html" data-i18n="navHome"></a>
-  <a href="services.html" data-i18n="navServices"></a>
-  <a href="projects.html" data-i18n="navProjects"></a>
-  <a href="about.html" data-i18n="navAbout"></a>
-  <a href="contact.html" data-i18n="navContact"></a>
-    </nav>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="navHome"></a></li>
+      <li><a href="services.html" data-i18n="navServices"></a></li>
+      <li><a href="projects.html" data-i18n="navProjects"></a></li>
+      <li><a href="about.html" data-i18n="navAbout"></a></li>
+      <li><a href="contact.html" data-i18n="navContact"></a></li>
+    </ul>
 
     <div class="lang">
-      <span onclick="setLang('hu')">HU</span> |
-      <span onclick="setLang('en')">EN</span>
+      <button onclick="setLang('hu')">HU</button>
+      <button onclick="setLang('en')">EN</button>
     </div>
-  </div>
+  </nav>
 </header>
 
-<main>
-
-<!-- ================= HERO ================= -->
-<section>
-  <div class="container section-box">
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
     <h1 data-i18n="heroTitle"></h1>
     <p data-i18n="heroText"></p>
+    <a href="contact.html" class="cta" data-i18n="ctaButton"></a>
   </div>
 </section>
 
-<!-- ================= SERVICES PREVIEW ================= -->
-<section>
-  <div class="container section-box">
-    <h2>Our services</h2>
-    <div class="grid">
-      <div class="card"><div class="img"></div><h3>Software Testing</h3><p>End-to-end enterprise testing services.</p></div>
-      <div class="card"><div class="img"></div><h3>Test Data Management</h3><p>Secure and compliant test data handling.</p></div>
-      <div class="card"><div class="img"></div><h3>Release Management</h3><p>Predictable and controlled releases.</p></div>
-    </div>
-  </div>
-</section>
+<!-- ===== COOKIE ===== -->
+<div id="cookie-banner" class="cookie-banner">
+  <span data-i18n="cookieText"></span>
+  <button onclick="acceptCookies()" data-i18n="cookieAccept"></button>
+</div>
 
-<!-- ================= REFERENCES ================= -->
-<section>
-  <div class="container section-box">
-    <h2>References</h2>
-    <div class="refs">
-      <img src="images/ref-kh.png" height="40">
-      <img src="images/ref-one.png" height="40">
-      <img src="images/ref-yettel.png" height="40">
-      <img src="images/ref-nordix.png" height="40">
-      <img src="images/ref-alpsoft.png" height="40">
-      <img src="images/ref-hexaware.png" height="40">
-    </div>
-  </div>
-</section>
-
-<!-- ================= CTA ================= -->
-<section>
-  <div class="container section-box" style="text-align:center">
-    <h2>Let’s build quality into your IT systems</h2>
-    <p>Talk to our experts and see how GTAK can support your delivery.</p>
-    <a href="contact.html" class="cta-btn">Contact us</a>
-  </div>
-</section>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer>
-  <div class="container">© 2025 GTAK Consulting Kft.</div>
-</footer>
-
-<script src="js/main.js"></script>
 <script src="js/lang.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/cookie.js"></script>
 </body>
 </html>
