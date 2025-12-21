@@ -206,3 +206,19 @@ footer {
   }
   h1 { font-size: 32px; }
 }
+/* ================= LOGO EXTENDED ================= */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-brand {
+  color: var(--brand);
+}
+
+.logo-consulting {
+  color: var(--brand);
+  font-weight: 600;
+  letter-spacing: .04em;
+}
