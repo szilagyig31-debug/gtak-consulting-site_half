@@ -9,65 +9,47 @@
 <body>
 
 <!-- NAVBAR -->
-<header>
-  <nav class="navbar">
-    <div class="logo">
-      <span class="logo-main">G-TAK</span>
-      <span class="logo-sub">Consulting</span>
-    </div>
-
-    <div class="nav-links">
-      <a href="index.html" data-i18n="navHome"></a>
-      <a href="services.html" data-i18n="navServices"></a>
-      <a href="projects.html" data-i18n="navProjects"></a>
-      <a href="about.html" data-i18n="navAbout"></a>
-      <a href="contact.html" data-i18n="navContact"></a>
-    </div>
-
-    <div class="lang">
-      <button onclick="setLang('hu')">HU</button>
-      <button onclick="setLang('en')">EN</button>
-    </div>
-  </nav>
-</header>
+<header>…(ugyanaz mint fent)…</header>
 
 <!-- HERO -->
 <section class="hero">
   <div class="container">
     <h1 data-i18n="heroTitle"></h1>
-    <p data-i18n="heroText"></p>
-    <a href="contact.html" class="cta">Kapcsolat</a>
+    <p data-i18n="heroSubtitle"></p>
+  </div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="container section-box">
+  <h2 data-i18n="servicesTitle"></h2>
+  <div class="grid">
+    <div class="card">
+      <div class="img"></div>
+      <h3>QA & Testing</h3>
+      <p>Komplex manuális és automatizált tesztelési szolgáltatások.</p>
+    </div>
+    <div class="card">
+      <div class="img"></div>
+      <h3>Test Data Management</h3>
+      <p>Biztonságos, skálázható tesztadat-kezelési megoldások.</p>
+    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="container grid">
+  <div class="footer-grid">
     <div>
-      <h3>Oldaltérkép</h3>
-      <a href="index.html">Főoldal</a><br>
-      <a href="services.html">Szolgáltatások</a><br>
-      <a href="projects.html">Referenciák</a>
+      <strong>G-TAK Consulting</strong>
+      <p>Minőségvezérelt IT megoldások</p>
     </div>
     <div>
-      <h3>Jogi</h3>
+      <a href="imprint.html">Impresszum</a><br>
       <a href="privacy.html">Adatkezelés</a><br>
-      <a href="cookies.html">Cookie</a><br>
-      <a href="imprint.html">Impresszum</a>
-    </div>
-    <div>
-      <h3>Kapcsolat</h3>
-      <p>info@g-tak.hu</p>
-      <p>Budapest</p>
+      <a href="cookies.html">Cookie tájékoztató</a>
     </div>
   </div>
 </footer>
-
-<!-- COOKIE -->
-<div id="cookie-banner" class="cookie-banner">
-  <span data-i18n="cookieText"></span>
-  <button onclick="acceptCookies()" data-i18n="cookieAccept"></button>
-</div>
 
 <script src="js/main.js"></script>
 </body>
