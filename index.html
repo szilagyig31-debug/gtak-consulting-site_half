@@ -2,14 +2,13 @@
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
-  <title>G-TAK Consulting – IT Quality & QA</title>
-  <meta name="description" content="Vállalati szintű tesztelés, QA és release management tanácsadás.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G-TAK Consulting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-<!-- ===== NAVBAR ===== -->
+
+<!-- NAVBAR -->
 <header>
   <nav class="navbar">
     <div class="logo">
@@ -17,13 +16,13 @@
       <span class="logo-sub">Consulting</span>
     </div>
 
-    <ul class="nav-links">
-      <li><a href="index.html" data-i18n="navHome"></a></li>
-      <li><a href="services.html" data-i18n="navServices"></a></li>
-      <li><a href="projects.html" data-i18n="navProjects"></a></li>
-      <li><a href="about.html" data-i18n="navAbout"></a></li>
-      <li><a href="contact.html" data-i18n="navContact"></a></li>
-    </ul>
+    <div class="nav-links">
+      <a href="index.html" data-i18n="navHome"></a>
+      <a href="services.html" data-i18n="navServices"></a>
+      <a href="projects.html" data-i18n="navProjects"></a>
+      <a href="about.html" data-i18n="navAbout"></a>
+      <a href="contact.html" data-i18n="navContact"></a>
+    </div>
 
     <div class="lang">
       <button onclick="setLang('hu')">HU</button>
@@ -32,23 +31,44 @@
   </nav>
 </header>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <section class="hero">
   <div class="container">
     <h1 data-i18n="heroTitle"></h1>
     <p data-i18n="heroText"></p>
-    <a href="contact.html" class="cta" data-i18n="ctaButton"></a>
+    <a href="contact.html" class="cta">Kapcsolat</a>
   </div>
 </section>
 
-<!-- ===== COOKIE ===== -->
+<!-- FOOTER -->
+<footer>
+  <div class="container grid">
+    <div>
+      <h3>Oldaltérkép</h3>
+      <a href="index.html">Főoldal</a><br>
+      <a href="services.html">Szolgáltatások</a><br>
+      <a href="projects.html">Referenciák</a>
+    </div>
+    <div>
+      <h3>Jogi</h3>
+      <a href="privacy.html">Adatkezelés</a><br>
+      <a href="cookies.html">Cookie</a><br>
+      <a href="imprint.html">Impresszum</a>
+    </div>
+    <div>
+      <h3>Kapcsolat</h3>
+      <p>info@g-tak.hu</p>
+      <p>Budapest</p>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE -->
 <div id="cookie-banner" class="cookie-banner">
   <span data-i18n="cookieText"></span>
   <button onclick="acceptCookies()" data-i18n="cookieAccept"></button>
 </div>
 
-<script src="js/lang.js"></script>
-<script src="js/nav.js"></script>
-<script src="js/cookie.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
